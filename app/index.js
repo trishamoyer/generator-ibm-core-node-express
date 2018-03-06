@@ -184,11 +184,6 @@ module.exports = class extends Generator {
     if( this.options.genSwagger ) {
       this.fs.delete(this.destinationPath('server/routers/public.js'));
     }
-    else {
-      // this.fs.copy(this.templatePath('public/index.html'), this.destinationPath('public/index.html'));
-      // this.fs.copy(this.templatePath('public/404.html'), this.destinationPath('public/404.html'));
-      // this.fs.copy(this.templatePath('public/500.html'), this.destinationPath('public/500.html'));
-    }
 
     // Additional scripts for generation via yo
     if(this.options.bluemix.fromYo) {
